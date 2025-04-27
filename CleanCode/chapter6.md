@@ -1,6 +1,22 @@
 # Chapter 6 - Object and Data Structures
 
 ## Summary
+Objects and data structures serve different purposes. Objects hide their data behind abstractions and expose functions to operate on that data, while data structures expose their data and have no meaningful functions.
+
+The Law of Demeter suggests that a method should only call methods belonging to:
+- Its own class
+- Objects it creates
+- Objects passed as arguments
+- Objects held in instance variables
+
+Data Transfer Objects (DTOs) are simple data structures with public variables and no functions. They are useful for transferring data between systems, like communicating with databases or parsing messages.
+
+Key points:
+- Choose between objects and data structures based on needs
+- Objects hide data and expose behavior
+- Data structures expose data and have little behavior
+- Follow Law of Demeter to reduce coupling
+- Use DTOs appropriately for data transfer
 
 ## Examples
 
